@@ -1,0 +1,107 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0072ff;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 2px solid #0072ff;
+  border-radius: 8px;
+  width: calc(100% - 24px);
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #00c6ff;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.weather-info {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info h2 {
+  margin: 0;
+  color: #0072ff;
+  font-size: 1.5rem;
+}
+
+.weather-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.error {
+  color: #e53e3e;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+}
